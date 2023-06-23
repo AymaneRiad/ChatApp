@@ -1,0 +1,21 @@
+/* Apply nice styles */
+.button {
+    -fx-background-color: #333333; /* Set the background color to dark gray */
+    -fx-border-color: #ccc; /* Replace '#ccc' with your desired border color */
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-padding: 10px 20px;
+    -fx-text-fill: white; /* Set the text color to white */
+}
+
+.button:hover {
+    -fx-background-color: #444444; /* Replace '#444444' with your desired hover color (a slightly lighter shade of black) */
+}
+
+.button:focused {
+    -fx-background-color: #444444; /* Replace '#444444' with your desired background color when focused */
+}
+
+.button:pressed {
+    -fx-background-color: #222222; /* Replace '#222222' with your desired background color when pressed (a slightly darker shade of black) */
+}

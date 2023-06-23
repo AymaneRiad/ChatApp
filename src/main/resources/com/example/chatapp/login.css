@@ -1,0 +1,69 @@
+.login-header {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-padding: 20px;
+}
+
+.error-message {
+    -fx-text-fill: red;
+    -fx-padding: 10px;
+}
+
+.left-anchorpane {
+    -fx-background-color: linear-gradient(to right, #FFD700, #FFA500, #FF6347); /* Gradient from gold to orange to tomato */
+}
+/* Change the color of the button */
+.button {
+    -fx-background-color: #FFD700; /* Replace '#4CAF50' with your desired color */
+    -fx-text-fill: white; /* Replace 'white' with your desired text color */
+}
+
+/* Apply nice styles */
+.button {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-border-color: #ccc; /* Replace '#ccc' with your desired border color */
+    -fx-border-width: 1px;
+}
+
+.button:hover {
+    -fx-background-color: #45a049; /* Replace '#45a049' with your desired hover color */
+}
+/* Apply nice styles */
+.text-field {
+    -fx-background-color: #FFDB58; /* Replace '#FFDB58' with your desired background color */
+    -fx-border-color: #ccc; /* Replace '#ccc' with your desired border color */
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-padding: 5px;
+}
+
+.text-field:focused {
+    -fx-border-color: #4CAF50; /* Replace '#4CAF50' with your desired border color when focused */
+    -fx-background-color: white; /* Replace 'white' with your desired background color when focused */
+}
+
+/* Apply some padding to the text inside the TextField */
+.text-field .text {
+    -fx-padding: 3px;
+}
+
+/* Apply a subtle shadow effect when hovered */
+.text-field:hover {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 0);
+}
+
+/* Apply styles for a circular TextField */
+.text-field {
+    -fx-background-radius: 50px; /* Set the background radius to half the height to achieve a circular shape */
+}
+/* Apply styles for a circular Button */
+.button {
+    -fx-background-radius: 50px; /* Set the background radius to half the height to achieve a circular shape */
+}
+
+
+

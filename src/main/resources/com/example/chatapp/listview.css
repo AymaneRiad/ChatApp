@@ -1,0 +1,37 @@
+/* Apply styles for the TableView */
+.table-view {
+    -fx-background-color: white; /* Set the background color to white */
+}
+
+/* Apply styles for the table header */
+.table-view .column-header-background {
+    -fx-background-color: #f2f2f2; /* Set the background color of the header */
+    -fx-padding: 10px;
+}
+
+.table-view .column-header {
+    -fx-font-weight: bold; /* Make the header text bold */
+}
+
+/* Apply styles for table rows */
+.table-row-cell {
+    -fx-background-color: yellow; /* Set the background color of the rows to yellow */
+}
+
+/* Apply styles for alternating rows */
+.table-row-cell:even {
+    -fx-background-color: white; /* Set the background color of alternating rows to white */
+}
+
+/* Apply styles for selected rows */
+.table-row-cell:selected {
+    -fx-background-color: #cbe2f7; /* Set the background color of selected rows */
+}
+
+/* Apply styles for the table cells */
+.table-cell {
+    -fx-padding: 5px 10px; /* Set the padding for the cells */
+}
+.right-anchorpane {
+    -fx-background-color: linear-gradient(#FF6347); /* Gradient from gold to orange to tomato */
+}

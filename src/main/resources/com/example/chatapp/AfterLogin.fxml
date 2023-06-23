@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="452.0" prefWidth="600.0" stylesheets="@login.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chatapp.AfterLoginC">
+    <children>
+        <AnchorPane prefHeight="458.0" prefWidth="308.0" styleClass="left-anchorpane" stylesheets="@AfterLogin.css">
+            <children>
+                <Label layoutX="116.0" layoutY="37.0" text="HOST" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="23.0" />
+                    </font>
+                </Label>
+                <Label layoutX="119.0" layoutY="98.0" prefHeight="60.0" prefWidth="71.0" text="PORT" textFill="WHITE" AnchorPane.bottomAnchor="280.0" AnchorPane.leftAnchor="119.0" AnchorPane.rightAnchor="118.0" AnchorPane.topAnchor="98.0">
+                    <font>
+                        <Font name="System Bold" size="23.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="Host" layoutX="50.0" layoutY="66.0" prefHeight="42.0" prefWidth="180.0" AnchorPane.bottomAnchor="350.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="78.0" AnchorPane.topAnchor="66.0" />
+                <TextField fx:id="Port" layoutX="57.0" layoutY="151.0" prefHeight="40.0" prefWidth="180.0" AnchorPane.bottomAnchor="267.0" AnchorPane.leftAnchor="57.0" AnchorPane.rightAnchor="71.0" AnchorPane.topAnchor="151.0" />
+            <Button fx:id="connect" layoutX="49.0" layoutY="293.0" mnemonicParsing="false" onAction="#onConnect" prefHeight="42.0" prefWidth="195.0" text="Connect to the server" />
+            <Label layoutX="83.0" layoutY="191.0" prefHeight="60.0" prefWidth="141.0" text="USERNAME" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Username" layoutX="57.0" layoutY="232.0" prefHeight="40.0" prefWidth="180.0" />
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="308.0" prefHeight="458.0" prefWidth="292.0">
+            <children>
+            <BorderPane prefHeight="458.0" prefWidth="292.0">
+               <center>
+                  <ListView fx:id="listview" prefHeight="396.0" prefWidth="292.0" BorderPane.alignment="CENTER" />
+               </center>
+               <bottom>
+                  <HBox prefHeight="34.0" prefWidth="292.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <TextField fx:id="Message" prefHeight="46.0" prefWidth="238.0" />
+                        <Button minWidth="45.0" mnemonicParsing="false" onAction="#onSubmit" prefHeight="38.0" prefWidth="54.0">
+                           <graphic>
+                              <ImageView fx:id="image" fitHeight="23.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@paper-plane-solid.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+               </bottom>
+            </BorderPane>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

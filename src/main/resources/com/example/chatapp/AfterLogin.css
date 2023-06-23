@@ -1,0 +1,68 @@
+/* Apply styles for the white TextField */
+.text-field {
+    -fx-background-color: white; /* Set the background color to white */
+    -fx-border-color: #ccc; /* Replace '#ccc' with your desired border color */
+    -fx-border-width: 1px;
+    -fx-border-radius: 20px; /* Set the border radius to create rounded corners */
+    -fx-padding: 10px;
+    -fx-text-fill: #333; /* Set the text color to your desired color */
+}
+
+/* Apply styles for the white Button */
+.button {
+    -fx-background-color: white; /* Set the background color to white */
+    -fx-border-color: #ccc; /* Replace '#ccc' with your desired border color */
+    -fx-border-width: 1px;
+    -fx-border-radius: 20px; /* Set the border radius to create rounded corners */
+    -fx-padding: 10px 20px;
+    -fx-text-fill: #333; /* Set the text color to your desired color */
+}
+
+.button:hover {
+    -fx-background-color: #f5f5f5; /* Replace '#f5f5f5' with your desired hover color */
+}
+
+.button:focused {
+    -fx-background-color: #f5f5f5; /* Replace '#f5f5f5' with your desired background color when focused */
+}
+
+.button:pressed {
+    -fx-background-color: #e5e5e5; /* Replace '#e5e5e5' with your desired background color when pressed */
+}
+/* Apply styles for the TableView */
+.table-view {
+    -fx-background-color: white; /* Set the background color to white */
+}
+
+/* Apply styles for the table header */
+.table-view .column-header-background {
+    -fx-background-color: #f2f2f2; /* Set the background color of the header */
+    -fx-padding: 10px;
+}
+
+.table-view .column-header {
+    -fx-font-weight: bold; /* Make the header text bold */
+}
+
+/* Apply styles for table rows */
+.table-row-cell {
+    -fx-background-color: yellow; /* Set the background color of the rows to yellow */
+}
+
+/* Apply styles for alternating rows */
+.table-row-cell:even {
+    -fx-background-color: white; /* Set the background color of alternating rows to white */
+}
+
+/* Apply styles for selected rows */
+.table-row-cell:selected {
+    -fx-background-color: #cbe2f7; /* Set the background color of selected rows */
+}
+
+/* Apply styles for the table cells */
+.table-cell {
+    -fx-padding: 5px 10px; /* Set the padding for the cells */
+}
+.left-anchorpane {
+    -fx-background-color: linear-gradient(to right, #FFD700, #FFA500, #FF6347); /* Gradient from gold to orange to tomato */
+}
